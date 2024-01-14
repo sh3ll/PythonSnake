@@ -1,7 +1,5 @@
 class Window:
 
-    rows = 25
-    cols = 25
     tile_size = 25
 
     def size(size, number):
