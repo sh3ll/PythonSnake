@@ -3,7 +3,7 @@ import tkinter
 import window
 import tile
 
-#Vars
+#Variables used in game
 velocityX = 0
 velocityY = 0
 rows = 25
@@ -33,10 +33,8 @@ window_width = window.winfo_width()
 window_height = window.winfo_height()
 screen_width = window.winfo_screenwidth()
 screen_height = window.winfo_screenheight()
-
 window_x = windowsize.windowcenter(screen_width, window_width)
 window_y = windowsize.windowcenter(screen_height, window_height)
-
 window.geometry(f"{window_width}x{window_height}+{window_x}+{window_y}")
 
 #Game Init
@@ -45,6 +43,7 @@ food = tile.Tile(10 * TILE_SIZE, 10 * TILE_SIZE)
 
 snake_body = []
 
+#KeyMapping for Snake
 def change_direction(e):
     global velocityX, velocityY
     if(game_over):
@@ -64,6 +63,7 @@ def change_direction(e):
         velocityX = 1
         velocityY = 0   
 
+#Moving Snake with Collision and Body Append
 def move():
     global snake, food, snake_body, game_over, tile, score
 
@@ -100,6 +100,7 @@ def move():
     snake.x += velocityX * TILE_SIZE
     snake.y += velocityY * TILE_SIZE
 
+#Drawing Snake
 def draw(): 
     global snake, food, snake_body, game_over, score 
     move()
