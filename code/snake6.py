@@ -1,3 +1,5 @@
+#Steg 6 - Snake bevegelse
+
 import tkinter
 import random
 

@@ -1,3 +1,5 @@
+#Steg 7 - Snake spiser mat
+
 import tkinter
 import random
 

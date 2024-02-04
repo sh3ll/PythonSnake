@@ -1,3 +1,5 @@
+#Steg 1 - Opprette generisk vindu
+
 import tkinter
 import random
 

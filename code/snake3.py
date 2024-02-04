@@ -1,3 +1,5 @@
+#Steg 3 - Vindu center 
+
 import tkinter
 import random
 

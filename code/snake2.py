@@ -1,3 +1,5 @@
+#Steg 2 - Riktig vindu størrelse
+
 import tkinter
 import random
 
