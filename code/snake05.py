@@ -35,14 +35,17 @@ window.geometry(f"{window_width}x{window_height}+{window_x}+{window_y}")
 
 #Game Init
 snake = Tile(5 * TILE_SIZE, 5 * TILE_SIZE)
+#-------------
 food = Tile(10 * TILE_SIZE, 10 * TILE_SIZE)
+#-------------
 
 def draw():
     global snake
 
     canvas.create_rectangle(snake.x, snake.y, snake.x + TILE_SIZE, snake.y + TILE_SIZE, fill = "lime green")
+    #-------------
     canvas.create_rectangle(food.x, food.y, food.x + TILE_SIZE, food.y + TILE_SIZE, fill = "red")
-
+    #-------------
     window.after(100, draw)
 
 draw()

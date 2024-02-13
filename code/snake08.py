@@ -67,6 +67,7 @@ def move():
         food.x = random.randint(0, COLS-1) * TILE_SIZE
         food.y = random.randint(0, ROWS-1) * TILE_SIZE
 
+    #-------------
     #update snake body
     for i in range(len(snake_body)-1, -1, -1):
         tile = snake_body[i]
@@ -77,7 +78,7 @@ def move():
             prev_tile = snake_body[i-1]
             tile.x = prev_tile.x
             tile.y = prev_tile.y
-
+    #-------------
     snake.x += velocityX * TILE_SIZE
     snake.y += velocityY * TILE_SIZE
 

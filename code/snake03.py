@@ -18,6 +18,7 @@ canvas = tkinter.Canvas(window, bg = "black", width = WINDOW_WIDTH, height = WIN
 canvas.pack()
 window.update()
 
+#-------------
 #Window Center
 window_width = window.winfo_width()
 window_height = window.winfo_height()
@@ -27,5 +28,6 @@ window_x = int((screen_width/2) - (window_width/2))
 window_y = int((screen_height/2) - (window_height/2))
 #Geometry Format - (width)*(height)+(x)+(y)
 window.geometry(f"{window_width}x{window_height}+{window_x}+{window_y}")
+#-------------
 
 window.mainloop()

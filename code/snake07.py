@@ -38,8 +38,9 @@ snake = Tile(5 * TILE_SIZE, 5 * TILE_SIZE)
 food = Tile(10 * TILE_SIZE, 10 * TILE_SIZE)
 velocityX = 0
 velocityY = 0
+#-------------
 snake_body = []
-
+#-------------
 #KeyMapping for Snake
 def change_direction(e):
     global velocityX, velocityY
@@ -61,21 +62,22 @@ def change_direction(e):
 def move():
     global snake, food
 
+    #-------------
     #collision
     if (snake.x == food.x and snake.y == food.y):
         snake_body.append(Tile(food.x, food.y))
         food.x = random.randint(0, COLS-1) * TILE_SIZE
         food.y = random.randint(0, ROWS-1) * TILE_SIZE
-
+    #-------------
     snake.x += velocityX * TILE_SIZE
     snake.y += velocityY * TILE_SIZE
 
 def draw():
     global snake
     move()
-
+    #-------------
     canvas.delete("all")
-
+    #-------------
     canvas.create_rectangle(snake.x, snake.y, snake.x + TILE_SIZE, snake.y + TILE_SIZE, fill = "lime green")
     canvas.create_rectangle(food.x, food.y, food.x + TILE_SIZE, food.y + TILE_SIZE, fill = "red")
 

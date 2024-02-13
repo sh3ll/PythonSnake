@@ -36,6 +36,7 @@ window.geometry(f"{window_width}x{window_height}+{window_x}+{window_y}")
 #Game Init
 snake = Tile(5 * TILE_SIZE, 5 * TILE_SIZE)
 food = Tile(10 * TILE_SIZE, 10 * TILE_SIZE)
+#-------------
 velocityX = 0
 velocityY = 0
 
@@ -62,6 +63,7 @@ def move():
 
     snake.x += velocityX * TILE_SIZE
     snake.y += velocityY * TILE_SIZE
+#-------------
 
 def draw():
     global snake

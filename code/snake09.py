@@ -39,13 +39,17 @@ food = Tile(10 * TILE_SIZE, 10 * TILE_SIZE)
 velocityX = 0
 velocityY = 0
 snake_body = []
+#-------------
 game_over = False
+#-------------
 
 #KeyMapping for Snake
 def change_direction(e):
+    #-------------
     global velocityX, velocityY, game_over
     if(game_over):
         return 
+    #-------------
 
     #print(e.keysym)
     if(e.keysym == "Up" and velocityY != 1):
@@ -62,6 +66,7 @@ def change_direction(e):
         velocityY = 0
 
 def move():
+    #-------------
     global snake, food, snake_body, game_over
     if (game_over):
         return
@@ -74,7 +79,7 @@ def move():
         if (snake.x == tile.x and snake.y == tile.y):
             game_over = True
             return
-
+    #-------------
     #collision
     if (snake.x == food.x and snake.y == food.y):
         snake_body.append(Tile(food.x, food.y))
