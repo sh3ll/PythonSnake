@@ -11,7 +11,8 @@ WINDOW_WIDTH = TILE_SIZE * ROWS
 WINDOW_HEIGHT = TILE_SIZE * COLS
 
 window = tkinter.Tk()
+#-------------
 window.title("Snake")
 window.resizable(False, False)
-
+#-------------
 window.mainloop()

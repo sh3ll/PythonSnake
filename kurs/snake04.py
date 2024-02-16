@@ -37,7 +37,7 @@ window.geometry(f"{window_width}x{window_height}+{window_x}+{window_y}")
 
 #-------------
 #Game Init
-snake = Tile(5 * TILE_SIZE, 5 * TILE_SIZE)
+#+++++++++++++#
 
 def draw():
     global snake

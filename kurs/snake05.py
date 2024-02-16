@@ -36,7 +36,7 @@ window.geometry(f"{window_width}x{window_height}+{window_x}+{window_y}")
 #Game Init
 snake = Tile(5 * TILE_SIZE, 5 * TILE_SIZE)
 #-------------
-food = Tile(10 * TILE_SIZE, 10 * TILE_SIZE)
+#+++++++++++++#
 #-------------
 
 def draw():

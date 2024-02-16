@@ -12,6 +12,6 @@ WINDOW_HEIGHT = TILE_SIZE * COLS
 
 window = tkinter.Tk()
 #+++++++++++++#
-window.resizable(False, False)
+#+++++++++++++#
 
 window.mainloop()
